@@ -71,7 +71,10 @@ Keep the description under ~72 characters. If you need more detail, put it in th
 **Size:** keep PRs small. If your diff is pushing past ~400 lines, split it. Large PRs get sat on and reviewed badly.
 
 **Merge requirements** (enforced by branch protection on `main`):
-- 1 approving review minimum
+- Required approving reviews
+    - `backend` & `frontend`: 2 approvals required
+    - `database`: 1 approval required
+    - `docs`: 0 approvals (PR required, mergeable upon creation)
 - Code owner approval required (see `CODEOWNERS` — if you touch another team's folder, their lead is auto-requested)
 - All review comment threads must be resolved before merge
 - No force-push, no deletion of `main`
